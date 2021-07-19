@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ng-fitness-app-4f0e5": {
+      "hosting": {
+        "fitness-tracker": [
+          "ng-fitness-app-4f0e5"
+        ]
+      }
+    }
+  }
+}

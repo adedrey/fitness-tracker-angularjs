@@ -1,0 +1,12 @@
+<section class="signup-form">
+  <form [formGroup]="credentialForm" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5px">
+    <mat-form-field>
+      <input formControlName="email" type="email" placeholder="Your Email" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <input formControlName="password" type="password" placeholder="Your Password" matInput>
+    </mat-form-field>
+    <button (click)="onLogin()" *ngIf="!isLoading" [disabled]="!credentialForm.valid" mat-raised-button color="primary">LOGIN</button>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+  </form>
+</section>
